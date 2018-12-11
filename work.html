@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Home</title>
+  <title>Work</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -74,44 +74,249 @@
      <div class="row myBtnContainer" >
      <div class="col-md-12">
             <span class="list-style-buttons">
-				<a href="#" id="gridview" class="switcher"><img src="img/grid.svg" alt="Grid"></a>
-				<a href="#" id="listview" class="switcher active"><img src="img/list.svg" alt="List"></a>
+				<a href="#" id="defaultOpen"  onclick="opengridlist('grid',this,'color')"><img src="img/grid.svg" alt="Grid"></a>
+				<a href="#" onclick="opengridlist('list',this,'color')"><img src="img/list.svg" alt="List"></a>
 			</span>
      <p class="showtype">
-   <a href="#" class="current" data-filter="*">all </a> &nbsp;/ &nbsp; 
-   <a href="#" class="" data-filter="print"> Print</a> &nbsp;/&nbsp;
-   <a href="#" class="" data-filter="photo"> Photography</a> &nbsp;/ &nbsp; 
-   <a href="#" class="" data-filter="web"> Web</a>  &nbsp;/  &nbsp;
-   <a href="#" class="" data-filter="app"> Application</a>
+   <a href="#" class="current filter-button" data-filter="*" onclick="filter('all',this,'color')">all </a> &nbsp;/ &nbsp; 
+   <a href="#" class="filter-button"  onclick="filter('print',this,'color')"> Print</a> &nbsp;/&nbsp;
+   <a href="#" class="filter-button"  onclick="filter('photo',this,'color')"> Photography</a> &nbsp;/ &nbsp; 
+   <a href="#" class="filter-button"  onclick="filter('web',this,'color')"> Web</a>  &nbsp;/  &nbsp;
+   <a href="#" class="filter-button" onclick="filter('app',this,'color')"> Application</a>
     </p>
      
 
 <!-- Portfolio Gallery Grid -->
-
+<div class="photocontent" id="grid" style="padding-top: : 5%; padding-bottom: 5%">
   <div class="row">
-    <img class="col-md-4 workimages" src="img/1.svg">
-    <img class="col-md-4 workimages" src="img/2.svg">
-    <img class="col-md-4 workimages" src="img/3.svg">
+      <div class="each-item col-md-4 print all" >
+    <img class=" workimages" src="img/1.svg">
+    <div class="cap1">
+                    <h3>Mushrooms</h3>
+                    <p>A car showroom for all verities of cars to display</p>
+                </div>
+                <div class="cap2">
+                    <p class="text-center">Visit</p>
+                </div>
+    </div>
+      <div class="each-item col-md-4 photo all" >
+    <img class=" workimages" src="img/2.svg">
+    <div class="cap1">
+                    <h3>Photographie</h3>
+                    <p>A car showroom for all verities of cars to display</p>
+                </div>
+                <div class="cap2">
+                    <p class="text-center">Visit</p>
+                </div>
+    </div>
+     <div class="each-item col-md-4 app all" >
+    <img class=" workimages" src="img/3.svg">
+    <div class="cap1">
+                    <h3>Car show</h3>
+                    <p>A car showroom for all verities of cars to display</p>
+                </div>
+                <div class="cap2">
+                    <p class="text-center">Visit</p>
+                </div>
+    </div>
 
-  </div>
-  <div class="row">
-    <img class="col-md-4 workimages" src="img/4.svg">
-    <img class="col-md-4 workimages" src="img/5.svg">
-    <img class="col-md-4 workimages" src="img/6.svg">
-
-  </div> 
-  <div class="row">
-    <img class="col-md-4 workimages" src="img/7.svg">
-    <img class="col-md-4 workimages" src="img/8.svg">
-    <img class="col-md-4 workimages" src="img/9.svg">
  
+  
+      <div class="all each-item col-md-4 print" >
+    <img class=" workimages" src="img/4.svg">
+    <div class="cap1">
+                    <h3>Car show</h3>
+                    <p>A car showroom for all verities of cars to display</p>
+                </div>
+                <div class="cap2">
+                    <p class="text-center">Visit</p>
+                </div>
+    </div>
+      <div class="each-item col-md-4 print all" >
+    <img class=" workimages" src="img/5.svg">
+    <div class="cap1">
+                    <h3>Car show</h3>
+                    <p>A car showroom for all verities of cars to display</p>
+                </div>
+                <div class="cap2">
+                    <p class="text-center">Visit</p>
+                </div>
+    </div>
+      <div class="each-item col-md-4 print all" >
+    <img class=" workimages" src="img/6.svg">
+    <div class="cap1">
+                    <h3>Car show</h3>
+                    <p>A car showroom for all verities of cars to display</p>
+                </div>
+                <div class="cap2">
+                    <p class="text-center">Visit</p>
+                </div>
+    </div>
+
+  
+  
+   <div class="each-item col-md-4 app all">
+    <img class=" workimages" src="img/7.svg">
+    <div class="cap1">
+                    <h3>Car show</h3>
+                    <p>A car showroom for all verities of cars to display</p>
+                </div>
+                <div class="cap2">
+                    <p class="text-center">Visit</p>
+                </div>
+    </div>
+      <div class="each-item col-md-4 print all" >
+    <img class=" workimages" src="img/8.svg">
+    <div class="cap1">
+                    <h3>Car show</h3>
+                    <p>A car showroom for all verities of cars to display</p>
+                </div>
+                <div class="cap2">
+                    <p class="text-center">Visit</p>
+                </div>
+    </div>
+     <div class=" print each-item col-md-4 all " >
+    <img class=" workimages" src="img/9.svg">
+    <div class="cap1">
+                    <h3>Car show</h3>
+                    <p>A car showroom for all verities of cars to display</p>
+                </div>
+                <div class="cap2">
+                    <p class="text-center">Visit</p>
+                </div>
+    </div>
+     <div class="nothing each-item col-md-4 " >
+         No Result 404 not found
+    </div>
+    
+    
+ 
+  
   </div>
-
-
+</div>
 <!-- END GRID -->
+
+
+<!-- Portfolio Gallery list -->
+<div class="photocontent" id="list" style="padding-top: 5%;">
+<ul>
+   <div class="row all print each-item">
+    <img class="col-md-6 workimages" src="img/1.svg">
+    <div class="col-md-6">
+    <h2><br>mushrooms</h2>
+    <p >
+       <br>
+        print image with mushrommes
+    </p>
+    </div>
+    </div>
+</ul>
+<ul>
+   <div class="row all photo each-item">
+    <img class="col-md-6 workimages" src="img/2.svg">
+    <div class="col-md-6">
+    <h2><br>SKI</h2>
+    <p >
+       <br>
+        Photographie session image with dancers 
+    </p>
+    </div>
+    </div>
+</ul>
+<ul>
+   <div class="row all app each-item">
+    <img class="col-md-6 workimages" src="img/3.svg">
+    <div class="col-md-6">
+    <h2><br>Buttons</h2>
+    <p >
+       <br>
+        Buttons for web
+    </p>
+    </div>
+    </div>
+</ul>
+ <ul>
+   <div class="row all print each-item">
+    <img class="col-md-6 workimages" src="img/4.svg">
+    <div class="col-md-6">
+    <h2><br>happy face</h2>
+    <p >
+       <br>
+        print image with happy face
+    </p>
+    </div>
+    </div>
+</ul>
+<ul>
+   <div class="row all print each-item">
+    <img class="col-md-6 workimages" src="img/5.svg">
+    <div class="col-md-6">
+    <h2><br>web</h2>
+    <p >
+       <br>
+        print image with social media
+    </p>
+    </div>
+    </div>
+</ul>
+ <ul>
+   <div class="row all print each-item">
+    <img class="col-md-6 workimages" src="img/6.svg">
+    <div class="col-md-6">
+    <h2><br>Jesus</h2>
+    <p >
+       <br>
+        print image with Jesus
+    </p>
+    </div>
+    </div>
+</ul>
+<ul>
+   <div class="row all app each-item">
+    <img class="col-md-6 workimages" src="img/7.svg">
+    <div class="col-md-6">
+    <h2><br>Game yellow head</h2>
+    <p >
+       <br>
+        application for kids
+    </p>
+    </div>
+    </div>
+</ul>
+ <ul>
+   <div class="row all print each-item">
+    <img class="col-md-6 workimages" src="img/8.svg">
+    <div class="col-md-6">
+    <h2><br> gun</h2>
+    <p >
+       <br>
+        print image with gun
+    </p>
+    </div>
+    </div>
+</ul>
+<ul>
+   <div class="row each-item print all">
+    <img class="col-md-6 workimages " src="img/9.svg">
+    <div class="col-md-6">
+    <h2><br>graphity style </h2>
+    <p >
+       <br>
+        print image with graphity style
+    </p>
+    </div>
+    </div>
+</ul>
+ <div class="nothing each-item col-md-4 " >
+         No Result 404 not found
+    </div>
+  </div>
+<!-- END LIST -->   
     </div>
       
-                
+    </div>  
+      </div>
+      </div>             
    
   <div class="calout">
      <div class="container calout">
@@ -137,8 +342,6 @@
        </div>        
      </div>
   </div>
-  </div>  
-      </div>
-      </div>                                                                                                                                      
+                                                                                                                                       
 </body>
 </html>
